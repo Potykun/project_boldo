@@ -1,3 +1,105 @@
 //====================================================================================================
+.main {
+	min-height: 100vh;
+	background-color: $DarkBlue;
+	padding-top: rem(150);
+	display: flex;
+	align-items: center;
+
+	// .main__container
+	&__container {}
+
+	// .main__body
+	&__body {
+		display: flex;
+	}
+
+	// .main__footer
+	&__footer {}
+}
+
+.main-content {
+	flex: 0 1 60%;
+
+	// .main-content__head
+	&__head {}
+
+	// .main-content__text
+	&__text {}
+
+	// .main-content__buttons
+	&__buttons {}
+
+	// .main-content__button
+	&__button {}
+}
+
+.text {}
+
+.button--green {}
+
+.button--transp {}
+
+.main-grafics {
+	flex: 0 1 40%;
+	background: rgba(255, 255, 255, 0.18);
+	border-radius: 15.03px;
+
+	// .main-grafics__inp
+	&__inp {}
+
+	// .main-grafics__dots
+	&__dots {
+		display: flex;
+		align-items: center;
+		gap: rem(10);
+		margin: rem(15);
+	}
+
+	// .main-grafics__body
+	&__body {}
+}
+
+.grafic-body {
+	padding: rem(20);
+	border: 1px solid #000;
+
+	// .grafic-body__list
+	&__list {}
+
+	// .grafic-body__item
+	&__item {}
+
+	// .grafic-body__head
+	&__head {}
+
+	// .grafic-body__content
+	&__content {
+		display: flex;
+	}
+
+	// .grafic-body__line
+	&__line {
+		height: rem(15);
+	}
+
+	// .grafic-body__line--grey
+	&__line--grey {
+		background-color: #8FB6D5;
+		width: 80%;
+	}
+
+	// .grafic-body__num
+	&__num {}
+
+	// .grafic-body__num--grey
+	&__num--grey {}
+
+	// .grafic-body__line--blue
+	&__line--blue {}
+
+	// .grafic-body__num--blue
+	&__num--blue {}
+}
 
 //====================================================================================================

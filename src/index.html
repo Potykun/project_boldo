@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="main">
+				<div class="main__container">
+					<div class="main__body">
+						<div class="main-content">
+							<h1 class="main-content__head">Save time by building fast with Boldo Template</h1>
+							<p class="main-content__text text">Funding handshake buyer business-to-business metrics iPad
+								partnership. First mover advantage innovator success
+								deployment non-disclosure.</p>
+							<div class="main-content__buttons">
+								<div class="main-content__button button--green">Buy template</div>
+								<div class="main-content__button button--transp">Explore</div>
+							</div>
+						</div>
+						<div class="main-grafics">
+							<div class="main-grafics__inp">
+								<div class="main-grafics__dots"><span class="dot dot--red"></span><span
+										class="dot dot-yellow"></span><span class="dot dot--green"></span></div>
+								<div class="main-grafics__body grafic-body">
+									<ul class="grafic-body__list">
+										<li class="grafic-body__item">
+											<div class="grafic-body__head"></div>
+											<div class="grafic-body__content">
+												<div class="grafic-body__line grafic-body__line--grey"></div>
+												<div class="grafic-body__num grafic-body__num--grey">80<span>%</span></div>
+											</div>
+										</li>
+										<li class="grafic-body__item">
+											<div class="grafic-body__head"></div>
+											<div class="grafic-body__content">
+												<div class="grafic-body__line grafic-body__line--blue"></div>
+												<div class="grafic-body__num grafic-body__num--blue">30<span>%</span></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__footer"></div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

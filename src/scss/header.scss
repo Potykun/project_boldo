@@ -1,8 +1,11 @@
 //====================================================================================================
 .header {
-	background-color: inherit;
-	background-color: $DarkBlue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 
+	// height: 100%;
 	// .header__container
 	&__container {
 		display: flex;
