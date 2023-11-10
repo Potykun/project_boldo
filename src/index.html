@@ -1,58 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"HomePage"
-})
+	@@include('html/_head.htm',{ "title":"HomePage" })
 
-<body>
-	<div class="wrapper">
-		@@include('html/_header.htm',{})
-		<main class="page">
-			<div class="main">
-				<div class="main__container">
-					<div class="main__body">
-						<div class="main-content">
-							<h1 class="main-content__head">Save time by building fast with Boldo Template</h1>
-							<p class="main-content__text text">Funding handshake buyer business-to-business metrics iPad
-								partnership. First mover advantage innovator success
-								deployment non-disclosure.</p>
-							<div class="main-content__buttons">
-								<div class="main-content__button button--green">Buy template</div>
-								<div class="main-content__button button--transp">Explore</div>
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="main"></section>
+				<section class="services">
+					<div class="services__container">
+						<div class="services__header">
+							<h2>Our Services</h2>
+							<article class="feature">
+								<h2 class="feature__heder h2">
+									Handshake infographic mass market crowdfunding
+									iteration.
+								</h2>
+								<ul class="feature__list">
+									<li class="feature__item">
+										<img
+											src="@img/feature/man-alone.png"
+											alt="man-alone"
+										/>
+										<h4>Cool feature title</h4>
+										<p>
+											Learning curve network effects return on
+											investment.
+										</p>
+										<div>
+											<a
+												href="#"
+												class="feature__button"
+											>
+												<span>Explore page</span>
+												<img
+													src="@img/feature/arrow-right.svg"
+													alt="arrow-right"
+												/>
+											</a>
+										</div>
+									</li>
+									<li class="feature__item">
+										<img
+											src="@img/feature/two-man.png"
+											alt="man-alone"
+										/>
+										<h4>Even cooler feature</h4>
+										<p>
+											Learning curve network effects return on
+											investment.
+										</p>
+										<div>
+											<a
+												href="#"
+												class="feature__button"
+											>
+												<span>Explore page</span>
+												<img
+													src="@img/feature/arrow-right.svg"
+													alt="arrow-right"
+												/>
+											</a>
+										</div>
+									</li>
+									<li class="feature__item">
+										<img
+											src="@img/feature/man-neo.png"
+											alt="man-alone"
+										/>
+										<h4>Cool feature title</h4>
+										<p>
+											Learning curve network effects return on
+											investment.
+										</p>
+										<div>
+											<a
+												href="#"
+												class="feature__button"
+											>
+												<span>Explore page</span>
+												<img
+													src="@img/feature/arrow-right.svg"
+													alt="arrow-right"
+												/>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</article>
+							<div class="services__openCustomers openCustomers">
+								<div class="openCustomers__images">
+									<img
+										src="@img/feature/manTalking.jpg"
+										alt="manTalking"
+									/>
+									<div>
+										<img
+											src="@img/connect/svg_grafik.svg"
+											alt="grafik"
+										/>
+										<h3>30%</h3>
+										<p>More income in June</p>
+									</div>
+								</div>
+								<div class="openCustomers__content">
+									<h2 class="h2">
+										We connect our customers with the best, and help
+										them keep up-and stay open.
+									</h2>
+									<ul>
+										<li>We connect our customers with the best.</li>
+										<li>Advisor success customer launch party.</li>
+										<li>Business-to-consumer long tail.</li>
+									</ul>
+									<a href="#">Start now</a>
+								</div>
 							</div>
-						</div>
-						<div class="main-grafics">
-							<div class="main-grafics__inp">
-								<div class="main-grafics__dots"><span class="dot dot--red"></span><span
-										class="dot dot-yellow"></span><span class="dot dot--green"></span></div>
-								<div class="main-grafics__body grafic-body">
-									<ul class="grafic-body__list">
-										<li class="grafic-body__item">
-											<div class="grafic-body__head"></div>
-											<div class="grafic-body__content">
-												<div class="grafic-body__line grafic-body__line--grey"></div>
-												<div class="grafic-body__num grafic-body__num--grey">80<span>%</span></div>
-											</div>
+							<div class="services__connectCustomers connectCustomers">
+								<div class="connectCustomers__content">
+									<h2 class="h2">
+										We connect our customers with the best, and help
+										them keep up-and stay open.
+									</h2>
+									<ul>
+										<li>
+											<img
+												src="@img/connect/feather.svg"
+												alt="feather"
+											/><span
+												>We connect our customers with the
+												best.</span
+											>
 										</li>
-										<li class="grafic-body__item">
-											<div class="grafic-body__head"></div>
-											<div class="grafic-body__content">
-												<div class="grafic-body__line grafic-body__line--blue"></div>
-												<div class="grafic-body__num grafic-body__num--blue">30<span>%</span></div>
-											</div>
+										<li>
+											<img
+												src="@img/connect/eye.svg"
+												alt="eye"
+											/><span
+												>Advisor success customer launch
+												party.</span
+											>
+										</li>
+										<li>
+											<img
+												src="@img/connect/sun.svg"
+												alt="sun"
+											/><span>Business-to-consumer long tail.</span>
 										</li>
 									</ul>
+								</div>
+								<div class="connectCustomers__Images ImagesCustomers">
+									<div class="ImagesCustomers__cnt">
+										<img
+											src="@img/connect/girlTalking.png"
+											alt="girlTalking"
+										/>
+									</div>
+									<div class="ImagesCustomers__card">
+										<img
+											src="@img/connect/circleGrafick.svg"
+											alt="circleGrafick"
+										/>
+										<ul>
+											<li>35% - Agile Development</li>
+											<li>30% - Investor bandwidth</li>
+											<li>35% - A/B testing</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="main__footer"></div>
-				</div>
-			</div>
-		</main>
-		@@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_js.htm',{})
-</body>
-
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
 </html>

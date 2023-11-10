@@ -5,8 +5,8 @@
 
 // Підключення шрифтів ============================================
 //&display=swap - додати при підключенні через плагін
-@import url('https://fonts.googleapis.com/css?family=Manrope:regular,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,&display=swap");
 // Підключити, якщо є локальні файли шрифтів
 //@import "fonts/fonts";
 
@@ -24,18 +24,22 @@ $fontSize: rem(20); // де 14(px) - розмір шрифту за замовч
 
 // Основні кольори
 $mainColor: #000; // Колір шрифту за замовчуванням
-$Green: #69E6A6;
-$DarkBlue: #0A2640;
-$Gray: #777777;
+$Green: #69e6a6;
+$DarkBlue: #0a2640;
+$White: #fff;
+$LightGrey: #f1f1f1;
+$Gray: #95abbc;
+$LightBlue: #0dbbfc;
+$GreyBlue: #8fb6d5;
 
 // Налаштування адаптивної сітки ==================================
 
 // Мінімальна ширина сторінки
 $minWidth: 320;
 // Ширина полотна (макету)
-$maxWidth: 1920;
+$maxWidth: 1400;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 1400;
+$maxWidthContainer: 1200;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
 $containerPadding: 30;
@@ -44,7 +48,9 @@ $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поїнти
-$pc: em($containerWidth); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
+$pc: em(
+	$containerWidth
+); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
 $tablet: em(991.98); // Планшети, деякі телефони в горизонтальному положенні
 $mobile: em(767.98); // Телефони L
 $mobileSmall: em(479.98); // Телефони S
@@ -63,7 +69,6 @@ $responsiveType: 1;
 // Стилі тега BODY ================================================
 
 body {
-
 	// Скролл заблоковано
 	.lock & {
 		overflow: hidden;
@@ -72,7 +77,8 @@ body {
 	}
 
 	// Сайт завантажений
-	.loaded & {}
+	.loaded & {
+	}
 }
 
 // Оболонка wrapper ===============================================
@@ -87,12 +93,12 @@ body {
 	}
 
 	// Притискаємо footer
-	>main {
+	> main {
 		flex: 1 1 auto;
 	}
 
 	// Фікс для слайдерів
-	>* {
+	> * {
 		min-width: 0;
 	}
 }
@@ -106,7 +112,6 @@ body {
 Сніппет (HTML): cnt
 */
 @if ($responsiveType==1) {
-
 	// Чуйна
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
@@ -117,27 +122,28 @@ body {
 		@if ($containerPadding>0) {
 			@if ($maxWidthContainer>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
-			}
-
-			@else {
-				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
-				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			} @else {
+				@include adaptiveValue(
+					"padding-left",
+					math.div($containerPadding, 2),
+					15
+				);
+				@include adaptiveValue(
+					"padding-right",
+					math.div($containerPadding, 2),
+					15
+				);
 			}
 		}
 	}
-}
-
-@else {
-
+} @else {
 	// Брейк-поїнтами
 	[class*="__container"] {
 		margin: 0 auto;
 
 		@if ($maxWidthContainer>0) {
 			max-width: rem($containerWidth);
-		}
-
-		@else {
+		} @else {
 			@if ($containerPadding>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
 			}
