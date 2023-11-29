@@ -32,3 +32,16 @@
 	@include adaptiveValue("font-size", 36, 24);
 	line-height: math.div(56, 36);
 }
+
+.label {
+	color: $Gray;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.text {
+	color: $Gray;
+
+	font-size: 20px;
+	line-height: 32px;
+}
